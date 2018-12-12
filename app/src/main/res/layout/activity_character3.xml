@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundBlue"
+    tools:context=".character3">
+
+    <Button
+        android:id="@+id/subcharacterButton"
+        android:layout_width="100dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="103dp"
+        android:background="@drawable/character_bar"
+        app:layout_constraintEnd_toStartOf="@+id/subcalculatorButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/subimpactsButton"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/impacts_bar"
+        app:layout_constraintEnd_toStartOf="@+id/subcalculatorButton"
+        app:layout_constraintStart_toEndOf="@+id/subcharacterButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/subcalculatorButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/calculator_bar"
+        app:layout_constraintBottom_toBottomOf="@+id/subimpactsButton"
+        app:layout_constraintEnd_toStartOf="@+id/subaboutButton"
+        app:layout_constraintStart_toEndOf="@+id/subcharacterButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/subaboutButton"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        android:background="@drawable/about_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subcalculatorButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/home_final"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="276dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/biologicalcomponents_title" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="385dp"
+        android:layout_height="481dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/biologicalcomponents_desc" />
+
+</android.support.constraint.ConstraintLayout>
